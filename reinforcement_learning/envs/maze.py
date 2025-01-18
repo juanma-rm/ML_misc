@@ -290,7 +290,7 @@ def plot_values(state_values, environment):
     frame = environment.render()
     f, axes = plt.subplots(1, 2, figsize=(10, 4))
     sns.heatmap(state_values, annot=True, fmt=".2f", cmap='coolwarm',
-                annot_kws={'weight': 'bold', 'size': 12}, linewidths=2, ax=axes[0])
+                annot_kws={'size': 8}, linewidths=2, ax=axes[0])
     axes[1].imshow(frame)
     axes[0].axis('off')
     axes[1].axis('off')
